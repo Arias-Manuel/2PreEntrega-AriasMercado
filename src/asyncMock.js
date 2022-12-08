@@ -7,7 +7,7 @@ const products = [
     img: "https://images.g2a.com/1024x768/1x1x0/god-of-war-pc-steam-key-global-i10000152407005/98c4f59fc39f44aaa432445e",
     stock: 10,
     description:
-      "God of War is an action video game with RPG elements, developed by Santa Monica Studio and released thanks to PlayStation PC LLC in 2022 for personal computers. It is an adaptation of the title from 2018, which was avail",
+      "God of War is an action video game with RPG elements, developed by Santa Monica Studio and released thanks to PlayStation PC LLC in 2022 for personal computers. It is an adaptation of the title from 2018, which was avail.",
   },
   {
     id: "2",
