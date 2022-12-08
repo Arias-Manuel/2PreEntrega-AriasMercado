@@ -1,15 +1,25 @@
-import './ItemListContainer.css'
+import { useState, useEffect } from "react";
+import "./ItemListContainer.css";
+import ItemList from "../ItemList/ItemList";
+import { getProducts } from "../../asyncMock";
+import { useParams } from "react-router-dom";
 
-const ItemListContainer = ({ saludos, prontoAbriremos  }) => {
+const ItemListContainer = ({ bienvenidos }) => {
+  const [products, setProducts] = useState([]);
+  const { categoryId } = useParams();
 
-     return (
+  useEffect(() => {
+    getProducts(categoryId).then((response) => {
+      setProducts(response);
+    });
+  }, [categoryId]);
 
-      <section className="mt-3 temporal">
-        <h2 className="text-uppercase fw-bolder">{saludos}</h2>
-
-        <h2 className="text-uppercase fst-italic">{ prontoAbriremos }</h2>
-      </section>
-    )
+  return (
+    <section>
+      <h1 className="bienvenida">{bienvenidos}</h1>
+      <ItemList products={products} />
+    </section>
+  );
 };
 
-export default ItemListContainer
+export default ItemListContainer;

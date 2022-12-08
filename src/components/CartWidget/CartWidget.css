@@ -1,10 +1,9 @@
 button {
-    margin: 10px 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .carrito {
-    display: flex;
-    height: 4rem;
-    padding: 10px  10px ;
-    
+  display: flex;
+  height: 4rem;
+  padding: 10px  10px ;
 }
